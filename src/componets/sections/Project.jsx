@@ -86,15 +86,15 @@ export const Project = () => {
          {/* Single Project Card */}
         <div className="p-6 bg-white/5 border border-white/10 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
           <h3 className="text-2xl font-semibold text-red-400 mb-2">
-            HumbleFlixs
+         Humble Estate
           </h3>
           <p className="text-gray-400 mb-4">
-          A movie booking website for movie enthusiasts.
+          A real estate website 
           </p>
 
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2">
-            {["react", "tawindcss","lucide-React ","Api","Github"].map((tech, key) => (
+            {["react", "tawindcss","lucide-React "].map((tech, key) => (
               <span
                 key={key}
                 className="bg-blue-500/10 text-blue-400 py-1 px-3 rounded-full text-sm 
@@ -106,12 +106,14 @@ export const Project = () => {
             ))}
           </div>
           <div className="mt-6 flex justify-between items-center">
-            <a href="https://furr-ever-care-z38u.vercel.app/" className="text-red-400 hover:text-blue-300 transistion-colors mt-4" >
+            <a href="https://humbleestate.netlify.app/" className="text-red-400 hover:text-blue-300 transistion-colors mt-4" >
             View Project {<ExternalLink className="inline-block w-4 h-4 ml-1" />}
+            
             </a>
           </div>
         </div>
         {/* end of second card */}
+         
       </div>
         </RevealOnScroll>
     </section>
