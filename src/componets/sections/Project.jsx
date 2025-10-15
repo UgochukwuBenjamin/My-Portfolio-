@@ -113,6 +113,36 @@ export const Project = () => {
           </div>
         </div>
         {/* end of second card */}
+         {/* Single Project Card */}
+        <div className="p-6 bg-white/5 border border-white/10 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
+          <h3 className="text-2xl font-semibold text-red-400 mb-2">
+         HumbleDish
+          </h3>
+          <p className="text-gray-400 mb-4">
+        A food and recipe sharing platform where users can discover, share, and save their favorite dishes.
+          </p>
+
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-2">
+            {["react", "tawindcss","lucide-React ","API"].map((tech, key) => (
+              <span
+                key={key}
+                className="bg-blue-500/10 text-blue-400 py-1 px-3 rounded-full text-sm 
+                  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.3)] 
+                  transition-all duration-300 cursor-pointer"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          <div className="mt-6 flex justify-between items-center">
+            <a href="https://humbledish.netlify.app" className="text-red-400 hover:text-blue-300 transistion-colors mt-4" >
+            View Project {<ExternalLink className="inline-block w-4 h-4 ml-1" />}
+            
+            </a>
+          </div>
+        </div>
+        {/* end of second card */}
          
       </div>
         </RevealOnScroll>
